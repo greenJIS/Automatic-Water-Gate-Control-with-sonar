@@ -86,21 +86,21 @@ void loop() {
     motorClock(motor1Left, motor1Right, motor1Delay);
   }
   else if(motor1PresentState!=motor1PriviousState && !motor1PresentState){
-    motorClock(motor1Left, motor1Right, motor1Delay);
+    motorAntiClock(motor1Left, motor1Right, motor1Delay);
   }
   
   if(motor2PresentState!=motor2PriviousState && motor2PresentState){
     motorClock(motor2Left, motor2Right, motor2Delay);
   }
   else if(motor2PresentState!=motor2PriviousState && !motor2PresentState){
-    motorClock(motor2Left, motor2Right, motor2Delay);
+    motorAntiClock(motor2Left, motor2Right, motor2Delay);
   }
   
   if(motor3PresentState!=motor3PriviousState && motor3PresentState){
     motorClock(motor3Left, motor3Right, motor3Delay);
   }
   else if(motor3PresentState!=motor3PriviousState && !motor3PresentState){
-    motorClock(motor3Left, motor3Right, motor3Delay);
+    motorAntiClock(motor3Left, motor3Right, motor3Delay);
   }
 
   
